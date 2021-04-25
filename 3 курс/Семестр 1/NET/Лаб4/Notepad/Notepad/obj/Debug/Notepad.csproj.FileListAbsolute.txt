@@ -1,0 +1,30 @@
+D:\WindowsForms\Notepad\Notepad\bin\Debug\Notepad.exe.config
+D:\WindowsForms\Notepad\Notepad\bin\Debug\Notepad.exe
+D:\WindowsForms\Notepad\Notepad\bin\Debug\Notepad.pdb
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.csprojAssemblyReference.cache
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.Form1.resources
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.cache
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.exe
+D:\WindowsForms\Notepad\Notepad\obj\Debug\Notepad.pdb
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\bin\Debug\Notepad.exe.config
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\bin\Debug\Notepad.exe
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\bin\Debug\Notepad.pdb
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.csprojAssemblyReference.cache
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.Form1.resources
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.cache
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.exe
+D:\Универ\3 курс\NET\Net 4\Notepad\Notepad\obj\Debug\Notepad.pdb
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\bin\Debug\Notepad.exe.config
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\bin\Debug\Notepad.exe
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\bin\Debug\Notepad.pdb
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.csprojAssemblyReference.cache
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.Form1.resources
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.cache
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.exe
+D:\Универ\3 курс\NET\Лаб4\Notepad\Notepad\obj\Debug\Notepad.pdb

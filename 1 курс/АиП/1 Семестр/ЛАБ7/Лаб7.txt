@@ -1,0 +1,142 @@
+Program LAB7;
+Uses Crt;
+Type 
+  data = Record
+          fio:string[15];
+          year:string[12];
+          sex:char;
+          sp:string[12];
+          cn:integer;
+          sal:real;
+         End;
+  u = ^queue;
+  queue = Record
+            inf:data;
+            next:u;
+          End;
+Var
+  newe, com, fin, tmp:u;
+  z:data;
+  key:char;
+
+Procedure Create;
+Begin
+  Writeln('Введите данные о сотруднике. ||||| Для выхода нажмите "*"');
+  Writeln('Введите ФИО сотрудника:');
+  Readln(z.fio);
+  If z.fio='*' then Exit;
+  Writeln('Введите дату рождения и пол сотрудника:');
+  Readln(z.year);
+  Readln(z.sex);
+  Writeln('Введите семейное положение и колличество детей сотрудника:');
+  Readln(z.sp);
+  Readln(z.cn);
+  Writeln('Введите оклад сотрудника:');
+  Readln(z.sal);
+  New(newe);
+  newe^.inf.fio:=z.fio;
+  newe^.inf.year:=z.year;
+  newe^.inf.sex:=z.sex;
+  newe^.inf.sp:=z.sp;
+  newe^.inf.cn:=z.cn;
+  newe^.inf.sal:=z.sal;
+  newe^.next:=nil;
+  com:=newe;
+  fin:=newe;
+  While true do
+    Writeln('Введите ФИО сотрудника:');
+    Readln(z.fio);
+    If z.fio='*' then Exit;
+    Writeln('Введите дату рождения и пол сотрудника:');
+    Readln(z.year);
+    Readln(z.sex);
+    Writeln('Введите семейное положение и колличество детей сотрудника:');
+    Readln(z.sp);
+    Readln(z.cn);
+    Writeln('Введите оклад сотрудника:');
+    Readln(z.sal);
+    New(newe);
+    newe^.inf.fio:=z.fio;
+    newe^.inf.year:=z.year;
+    newe^.inf.sex:=z.sex;
+    newe^.inf.sp:=z.sp;
+    newe^.inf.cn:=z.cn;
+    newe^.inf.sal:=z.sal;
+    newe^.next:=nil;
+    fin^.next:=newe;
+    fin:=newe; 
+End;
+{------------------------------------------}
+Procedure Add;
+Begin
+  Writeln('Введите данные о сотруднике. ||||| Для выхода нажмите "*"');
+  Writeln('Введите ФИО сотрудника:');
+  Readln(z.fio);
+  If z.fio='*' then Exit;
+  Writeln('Введите дату рождения и пол сотрудника:');
+  Readln(z.year);
+  Readln(z.sex);
+  Writeln('Введите семейное положение и колличество детей сотрудника:');
+  Readln(z.sp);
+  Readln(z.cn);
+  Writeln('Введите оклад сотрудника:');
+  Readln(z.sal);
+  New(newe);
+  newe^.inf.fio:=z.fio;
+  newe^.inf.year:=z.year;
+  newe^.inf.sex:=z.sex;
+  newe^.inf.sp:=z.sp;
+  newe^.inf.cn:=z.cn;
+  newe^.inf.sal:=z.sal;
+  newe^.next:=nil;
+  fin^.next:=newe;
+  fin:=newe;
+End;
+{-------------------------------------------}
+Procedure Exception;
+Begin
+  If com<>nil then
+    Begin
+      tmp:=com; 
+      com:=com^.next; 
+      Dispose(tmp); 
+      If com=nil then fin:=nil; 
+    End;
+End;
+{-------------------------------------------}
+Procedure View;
+Var i:integer;
+Begin
+  Writeln('Вывод очереди:');
+  tmp:=com;
+  i:=1;
+  While tmp<>nil do
+    Begin
+      Writeln(i,' ', tmp.inf.fio,' ',tmp.inf.year,' ',tmp.inf.sex,' ',tmp.inf.sp,' ',tmp.inf.cn,' ',tmp.inf.sal);
+      tmp:=tmp^.next;
+      i:=i+1;
+    End;
+  Writeln('Нажмите Enter, чтобы продолжить...');
+  Readln;
+End;
+{-------------------------------------------}
+Begin
+  fin:=nil; com:=nil;
+  Repeat
+    ClrScr; 
+    Writeln('1-Организация очереди');
+    Writeln('2-Добавление элемента в очередь');
+    Writeln('3-Удаление элемента из очереди');
+    Writeln('4-Просмотр очереди');
+    Writeln('5-Выход');
+    Writeln('-------------------------------');
+    Writeln('Выберите необходимый пункт меню...');
+    key:=ReadKey; 
+    Case key of 
+      '1':Create;
+      '2':Add;
+      '3':Exception;
+      '4':View;
+    End
+  Until Key='5' {выход из программы}
+End.

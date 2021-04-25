@@ -1,0 +1,5 @@
+*.pptx
+*.ini
+*.cache
+*.suo
+node_modules

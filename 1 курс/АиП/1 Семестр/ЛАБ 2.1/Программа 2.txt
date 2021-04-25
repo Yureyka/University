@@ -1,0 +1,32 @@
+Program IntegralSinus; 
+Const  MaxIter = 500;  {Максимальное число итераций} 
+Var Si, y: real;          
+    x, x1, x2, dx, eps: real;               
+    n: integer; 
+Begin   
+  Writeln('Введите началный и конечный аргументы, точность и шаг:');  
+  Readln(x1, x2, eps, dx);
+  writeln('|------------------------------|');
+  writeln('|----x----|----Si----|----n----|');
+  writeln('|------------------------------|');
+  Si:=x1;   {первый член ряда}     
+  y:=Si;   {начальное значение аргумента}
+  x:=x1;
+  n:=0;  
+While x<=x2 do          
+  Begin
+    While abs(Si)>eps do
+      Begin
+        Si:=Si*(((-1)*(sqr(x))*(2*n+1))/((2*n+3)*(2*n+2)*(2*n+3))); {очередной член ряда}        
+        n:=n+1;               
+        y:=y+Si;
+        writeln('|',x:9:3,'|',Si:10:6,'|',n:9,'|');
+        x:=x+dx;
+        If n>MaxIter then                  
+          Begin                      
+            Writeln('Ряд расходится!');                                           
+            Break;                  
+          End;           
+      End;     
+  End;
+End.

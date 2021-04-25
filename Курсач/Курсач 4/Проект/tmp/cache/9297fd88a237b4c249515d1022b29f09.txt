@@ -1,0 +1,49 @@
+a:2:{s:4:"data";s:1401:"<li>
+    <a href="category/beach">Пляжникам</a>
+            <ul>
+            <li>
+    <a href="category/vetements-b">Одежда</a>
+            <ul>
+            <li>
+    <a href="category/asics">Asics</a>
+    </li><li>
+    <a href="category/demix">Demix</a>
+    </li><li>
+    <a href="category/Mizuno">Mizuno</a>
+    </li>        </ul>
+    </li><li>
+    <a href="category/product-b">Товары</a>
+            <ul>
+            <li>
+    <a href="category/mikasa-b">Mikasa</a>
+    </li><li>
+    <a href="category/torres-b">Torres</a>
+    </li>        </ul>
+    </li>        </ul>
+    </li><li>
+    <a href="category/classic">Классикам</a>
+            <ul>
+            <li>
+    <a href="category/vetements-cl">Одежда</a>
+            <ul>
+            <li>
+    <a href="category/asics-cl">Asics</a>
+    </li><li>
+    <a href="category/demix-cl">Demix</a>
+    </li>        </ul>
+    </li><li>
+    <a href="category/product-cl">Товары</a>
+            <ul>
+            <li>
+    <a href="category/mikasa-CL">Mikasa</a>
+    </li><li>
+    <a href="category/torres-cl">Torres</a>
+    </li>        </ul>
+    </li>        </ul>
+    </li><li>
+    <a href="category/accessory">Аксессуары</a>
+            <ul>
+            <li>
+    <a href="category/simvolika-sfv">Символика СФВ</a>
+    </li>        </ul>
+    </li>";s:8:"end_time";i:1592212483;}

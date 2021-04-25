@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Юрей | Контакт</title>
+    <link rel="shortcut icon" href="img\av.jpg" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbg sticky-top">
+      <a href="main.html" class="navbar-brand pb-2">
+        <img src="img/logo2.png" weight=40px height=40px alt="logo">
+      </a>
+      <button class="navbar-toggler pb-2" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto ml-auto pr-5">
+          <li class="nav-item pr-5">
+            <a href="main.html" class="nav-link nav-font">Главная</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a href="study.html" class="nav-link nav-font">Учеба</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a href="album.html" class="nav-link nav-font">Фотоальбом</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a href="test.html" class="nav-link nav-font">Тест</a>
+          </li>
+          <li class="nav-item active pr-5">
+            <a href="contact.html" class="nav-link nav-font">Контакт</a>
+          </li>
+          <li class="nav-item pr-5">
+            <a href="about.html" class="nav-link nav-font">Обо мне</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-content container pt-3">
+      <h1>Связаться</h1>
+      <h5>Введи свои данные и нажми отправить.</h5>
+    </div>
+
+    <section class="content container">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <label for="FIO"><h4>ФИО</h4></label>
+            <input type="text" id="FIO" class="form-control" placeholder="ФИО" required>
+            <div class="invalid-feedback">Введите ФИО</div>
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="radio" name="testradio" id="first_radio" value="option1" required>
+              <label class="form-check-label" for="first_radio">
+                Мужчина
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="testradio" id="second_radio" value="option2" required>
+              <label class="form-check-label" for="second_radio">
+                Женщина
+              </label>
+            </div>
+            <label for="number"><h4 class="pt-2">Дата рождения</h4></label>
+            <input type="date" id="number" class="form-control" placeholder="Дата рождения" required>
+            <div class="invalid-feedback">Выберите дату</div>
+            <label for="email"><h4 class="pt-2">E-mail</h4></label>
+            <input type="text" id="email" class="form-control" placeholder="E-mail" required>
+            <div class="invalid-feedback">Введите ваш e-mail</div>
+            <label for="textm"><h4 class="pt-2">Текст сообщения</h4></label>
+            <textarea class="form-control" id="textm" placeholder="Введите сообщение" required></textarea>
+            <div class="invalid-feedback">
+              Введите сообщение
+            </div>
+            <button class="btn btn-primary mt-3" type="submit" name="submit">Отправить</button>
+            <button class="btn btn-danger mt-3" type="reset" name="reset">Очистить</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <a href="https://www.youtube.com/channel/UC7pvqEvIfLPD44Jum1VD5Mw?view_as=subscriber">
+          <h2 class="text-center nav-font" style="color: #1a3263">Не забудь подписаться на канал!</h2>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

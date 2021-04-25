@@ -1,0 +1,135 @@
+@font-face {
+  font-family:'Oswald';
+  src:url(../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family:'Press Start 2P';
+  src:url(../fonts/PressStart2P-Regular.ttf);
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+    background-color: #ffeecc;
+
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+table {
+  font-size: 20px;
+}
+
+th {
+  text-align: center;
+}
+
+footer {
+    padding: 3em;
+    bottom: 0;
+    height: 70px;
+
+    margin-top: auto;
+}
+
+.nav-font {
+  color: #FFD26A;
+  font-family: 'Press Start 2P', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-font2 {
+  color: #40a798;
+  font-family: 'Press Start 2P', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.navbg{
+  background-color: #FC8282;
+}
+
+.navbg2{
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.pic-desc {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.pt-anchor {
+  padding-top: 70px;
+	margin-top: -70px;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.img-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.grow {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.pic .pic-desc{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #979797;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #696464;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #504658;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #504658;
+}
+
+::selection {
+    background: #ae89e5;
+    color: rgb(245, 245, 245);
